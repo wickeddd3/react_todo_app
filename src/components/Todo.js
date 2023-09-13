@@ -5,7 +5,9 @@ export default function Todo ({ todo, done, remove }) {
   return (
     <li className="todo-item">
       <CheckboxDone done={ () => done(todo) } />
-      <span className="todo-name">{ todo.name }</span>
+      { todo.done ? (<del><span className="todo-name">{ todo.name }</span></del>)
+      : (<span className="todo-name">{ todo.name }</span>)
+      }
       <ButtonDelete remove={ () => remove(todo) } />
     </li>
   );
