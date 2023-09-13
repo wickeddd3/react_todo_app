@@ -2,9 +2,7 @@ import './styles/App.css';
 import TodoWrapper from './components/TodoWrapper.js';
 
 function App() {
-  return (
-    <TodoWrapper />
-  );
+  return <TodoWrapper />;
 }
 
 export default App;

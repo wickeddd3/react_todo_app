@@ -1,5 +1,8 @@
-export default function CheckboxDone ({ done }) {
+export default function CheckboxDone({ done }) {
   return (
-    <input type="checkbox" onChange={done}></input>
+    <input
+      type="checkbox"
+      onChange={done}
+    ></input>
   );
 }
