@@ -6,4 +6,4 @@ export default function TodoInput ({ todo, setTodo }) {
       onChange={ (e) => setTodo(e.target.value) }
     />
   );
-};
+}

@@ -9,7 +9,7 @@ export default function TodoWrapper () {
 
   function handleSetTodo (todo) {
     setTodoInput(todo);
-  };
+  }
 
   function handleAddTodo () {
     if (todoInput) {
@@ -22,14 +22,14 @@ export default function TodoWrapper () {
       setTodos(currentTodos);
       setTodoInput('');
     }
-  };
+  }
 
   function handleDeleteTodo (todo) {
     const currentTodos = [ ...todos ];
     const index = currentTodos.findIndex(item => item.id === todo.id);
     currentTodos.splice(index, 1);
     setTodos(currentTodos);
-  };
+  }
 
   function handleMarkTodoAsDone (todo) {
     const currentTodos = [ ...todos ];
@@ -39,7 +39,7 @@ export default function TodoWrapper () {
       done: true,
     };
     setTodos(currentTodos);
-  };
+  }
 
   return (
     <div className="todos-wrapper">
@@ -54,4 +54,4 @@ export default function TodoWrapper () {
       />
     </div>
   );
-};
+}

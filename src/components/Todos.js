@@ -25,4 +25,4 @@ export default function Todos ({ todos, done, remove }) {
       }
     </>
   );
-};
+}

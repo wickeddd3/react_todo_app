@@ -11,4 +11,4 @@ export default function Todo ({ todo, done, remove }) {
       <ButtonDelete remove={ () => remove(todo) } />
     </li>
   );
-};
+}
